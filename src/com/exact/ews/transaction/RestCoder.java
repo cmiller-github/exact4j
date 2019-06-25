@@ -85,7 +85,7 @@ class RestCoder implements Coder {
     }
 
     appendElement(document, transactionRoot, "Authorization_Num", r.getAuthorizationNum());
-    appendElement(document, transactionRoot, "Transaction_Tag", ((Integer)r.getTransactionTag()).toString());
+    appendElement(document, transactionRoot, "Transaction_Tag", ((Long)r.getTransactionTag()).toString());
     appendElement(document, transactionRoot, "Reference_No", r.getReferenceNo());
     appendElement(document, transactionRoot, "Customer_Ref", r.getCustomerRef());
     appendElement(document, transactionRoot, "Reference_3", r.getReference3());
