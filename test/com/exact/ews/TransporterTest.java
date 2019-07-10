@@ -217,7 +217,7 @@ public class TransporterTest extends TestCase {
     return request;
   }
 
-  protected Request getFindRequest(final int createdTag) {
+  protected Request getFindRequest(final long createdTag) {
     if(createdTag == 0)
       throw new IllegalArgumentException("getFindRequest(): createdTag cannot be 0");
 
